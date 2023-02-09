@@ -2,10 +2,10 @@ import numpy as np
 import pandas as pd
 import statsmodels.api as sm
 
-# Carregar o conjunto de dados
+# Carregando o conjunto de dados
 df = pd.read_csv("time_series_data.csv", index_col='timestamp', parse_dates=True)
 
-# Dividir o conjunto de dados em treinamento e teste
+# Dividindo o conjunto de dados em treinamento e teste
 train_data = df[:int(0.8*(len(df)))]
 test_data = df[int(0.8*(len(df))):]
 
